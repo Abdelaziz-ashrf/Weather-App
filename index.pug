@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./sass/master.css")
+        title Weather app
+    body 
+        .card 
+            .search 
+                input(type="text",class='search' name="City Name", placeholder="enter city name",spellcheck="false")
+                button 
+                    img(src="./images/search.png", alt="for Search")
+            .error  
+                p Invalid city name
+            .weather 
+                img(src="images/rain.png", class="weather-icon", alt="")
+                h1.temp 22°C
+                h2.city New York
+                .details 
+                    .col
+                        img(src="images/humidity.png")
+                        div 
+                            p.humidity 50% 
+                            p Humidity
+                    
+                    .col
+                        img(src="images/wind.png")
+                        div 
+                            p.wind 15 km/h 
+                            p Wind
+        include includes/_scripts/_scripts            
